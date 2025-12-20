@@ -831,6 +831,10 @@ a {
     position: relative;
     background: linear-gradient(90deg, #ffd280, #ffb861, #ffa552, #ffb861, #ffd280) !important;
     background-size: 200% 100% !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
     animation: gradientFlow 2s ease-in-out infinite, textGlitch 1.5s ease-in-out infinite;
 }
 
