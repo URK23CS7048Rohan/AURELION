@@ -2027,6 +2027,81 @@ body.light-theme .navbar {
     box-shadow: 0 6px 25px rgba(255, 107, 53, 0.5);
 }
 
+/* ==========================================
+   ORGANIZERS & PARTNERS SECTION
+   ========================================== */
+.organizers {
+    background: var(--color-bg-secondary);
+    padding: var(--spacing-2xl) 0;
+}
+
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    align-items: stretch;
+}
+
+.logo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    text-align: center;
+    min-height: 180px;
+    transition: all 0.3s ease;
+}
+
+.logo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3);
+}
+
+.partner-logo {
+    max-width: 120px;
+    max-height: 100px;
+    object-fit: contain;
+    filter: brightness(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logo-card:hover .partner-logo {
+    transform: scale(1.1);
+}
+
+.ieee-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.partner-name {
+    margin-top: var(--spacing-sm);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .logos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    .logo-card {
+        padding: var(--spacing-md);
+        min-height: 150px;
+    }
+
+    .partner-logo {
+        max-width: 80px;
+        max-height: 70px;
+    }
+}
+
 .tv-modal {
     display: none;
     position: fixed;
