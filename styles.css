@@ -215,7 +215,7 @@ section {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--color-purple), var(--color-cyan));
+    background: linear-gradient(90deg, var(--color-orange), var(--color-yellow));
     transition: var(--transition-normal);
 }
 
@@ -589,7 +589,7 @@ body.light-theme .moon-icon {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--color-purple), var(--color-cyan));
+    background: linear-gradient(135deg, var(--color-orange), var(--color-yellow));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
