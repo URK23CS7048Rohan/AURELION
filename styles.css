@@ -518,17 +518,21 @@ body.light-theme .moon-icon {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    padding: 0.5rem 1.25rem;
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 140, 66, 0.3);
     border-radius: 2rem;
     backdrop-filter: blur(10px);
     margin-bottom: var(--spacing-md);
-    animation: fadeInDown 0.8s ease;
+    color: var(--color-orange);
+    font-weight: 500;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.15);
 }
 
 .badge-icon {
     font-size: 1.25rem;
+    color: var(--color-orange);
 }
 
 .hero-title {
@@ -836,6 +840,8 @@ a {
     -webkit-text-fill-color: transparent !important;
     color: transparent !important;
     animation: gradientFlow 2s ease-in-out infinite, textGlitch 4s ease-in-out infinite;
+    /* Back glow effect */
+    filter: drop-shadow(0 0 30px rgba(255, 140, 66, 0.5)) drop-shadow(0 0 60px rgba(255, 107, 53, 0.3));
 }
 
 .hero-title .gradient-text::before,
