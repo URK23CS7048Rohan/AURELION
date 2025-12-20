@@ -369,3 +369,36 @@ console.log('%cInnovate for a Better Tomorrow', 'color: #06b6d4; font-size: 16px
 console.log('%cAI Towards Food, Water, Health & Energy', 'color: #9ca3af; font-size: 12px;');
 console.log('%c\nInterested in the code? We love curious minds!', 'color: #d1d5db; font-size: 14px;');
 console.log('%cJoin us at AURELION 2026 on March 03, 2026', 'color: #a855f7; font-size: 14px; font-weight: bold;');
+
+// ==========================================
+// EASTER EGG TV MODAL
+// ==========================================
+const easterEggBtn = document.getElementById('easterEggBtn');
+const tvModal = document.getElementById('tvModal');
+const tvCloseBtn = document.getElementById('tvCloseBtn');
+
+if (easterEggBtn && tvModal) {
+    easterEggBtn.addEventListener('click', function () {
+        tvModal.classList.add('active');
+    });
+}
+
+if (tvCloseBtn && tvModal) {
+    tvCloseBtn.addEventListener('click', function () {
+        tvModal.classList.remove('active');
+    });
+
+    // Close on background click
+    tvModal.addEventListener('click', function (e) {
+        if (e.target === tvModal) {
+            tvModal.classList.remove('active');
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && tvModal.classList.contains('active')) {
+            tvModal.classList.remove('active');
+        }
+    });
+}
