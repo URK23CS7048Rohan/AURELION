@@ -339,12 +339,10 @@ body.light-theme .moon-icon {
 
 .btn-primary {
     background: linear-gradient(135deg, #ff6b35, #ff8c42, #ffa552);
-    background-size: 200% 200%;
     color: #ffffff;
     font-weight: 700;
-    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4),
-        0 0 40px rgba(255, 140, 66, 0.3);
-    animation: gradientShift 3s ease infinite, pulseGlow 2s ease-in-out infinite;
+    box-shadow: 0 4px 25px rgba(255, 107, 53, 0.5),
+        0 0 50px rgba(255, 140, 66, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
