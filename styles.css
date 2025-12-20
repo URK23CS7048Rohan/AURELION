@@ -399,6 +399,47 @@ body.light-theme .moon-icon {
     padding-top: 80px;
 }
 
+/* Illustrated Characters as Background Decoration */
+.hero::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    bottom: 10%;
+    width: 400px;
+    height: 500px;
+    background: url('images/characters-left.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.4;
+    z-index: 0;
+    animation: float-slow 20s infinite ease-in-out;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: 15%;
+    width: 400px;
+    height: 500px;
+    background: url('images/characters-right.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.4;
+    z-index: 0;
+    animation: float-slow 18s infinite ease-in-out 2s;
+}
+
+@keyframes float-slow {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 .hero-background {
     position: absolute;
     inset: 0;
@@ -659,6 +700,31 @@ body.light-theme .moon-icon {
    ========================================== */
 .tracks {
     background: var(--color-bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.tracks::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
+    background: url('images/tech-elements.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.15;
+    animation: rotate-slow 40s infinite linear;
+}
+
+@keyframes rotate-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .tracks-grid {
