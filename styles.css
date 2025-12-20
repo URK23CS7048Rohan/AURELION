@@ -2088,17 +2088,31 @@ body.light-theme .navbar {
 @media (max-width: 768px) {
     .logos-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
     }
 
     .logo-card {
-        padding: var(--spacing-md);
-        min-height: 150px;
+        padding: var(--spacing-sm);
+        min-height: 120px;
     }
 
     .partner-logo {
-        max-width: 80px;
-        max-height: 70px;
+        max-width: 100px;
+        max-height: 80px;
+    }
+
+    .ieee-logo {
+        height: 80px;
+    }
+
+    .ieee-logo svg {
+        width: 100px;
+        height: 35px;
+    }
+
+    .partner-name {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
     }
 }
 
