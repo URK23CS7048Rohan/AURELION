@@ -826,9 +826,11 @@ a {
     animation: gradientFlow 3s ease-in-out infinite;
 }
 
-/* Hero title gets extra glitch effect */
+/* Hero title gets extra glitch effect - silver/white with orange accent */
 .hero-title .gradient-text {
     position: relative;
+    background: linear-gradient(90deg, #ffffff, #e8e8e8, #ff8c42, #e8e8e8, #ffffff) !important;
+    background-size: 200% 100% !important;
     animation: gradientFlow 2s ease-in-out infinite, textGlitch 1.5s ease-in-out infinite;
 }
 
