@@ -835,7 +835,7 @@ a {
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     color: transparent !important;
-    animation: gradientFlow 2s ease-in-out infinite, textGlitch 1.5s ease-in-out infinite;
+    animation: gradientFlow 2s ease-in-out infinite, textGlitch 4s ease-in-out infinite;
 }
 
 .hero-title .gradient-text::before,
