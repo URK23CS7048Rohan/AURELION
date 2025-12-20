@@ -338,18 +338,16 @@ body.light-theme .moon-icon {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff6b35, #ff8c42, #ffa552);
+    background: linear-gradient(135deg, #e65100, #f57c00);
     color: #ffffff;
-    font-weight: 700;
-    box-shadow: 0 4px 25px rgba(255, 107, 53, 0.5),
-        0 0 50px rgba(255, 140, 66, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(230, 81, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6),
-        0 0 60px rgba(255, 140, 66, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 81, 0, 0.4);
 }
 
 @keyframes gradientShift {
@@ -559,6 +557,8 @@ body.light-theme .moon-icon {
     font-weight: 500;
     font-size: 0.9rem;
     box-shadow: 0 0 20px rgba(255, 107, 53, 0.15);
+    animation: none !important;
+    transform: none !important;
 }
 
 .badge-icon {
@@ -633,7 +633,6 @@ body.light-theme .moon-icon {
     display: flex;
     justify-content: center;
     gap: var(--spacing-md);
-    animation: fadeInUp 0.8s ease 1.2s backwards;
 }
 
 .countdown-item {
@@ -644,7 +643,7 @@ body.light-theme .moon-icon {
     border-radius: var(--radius-md);
     backdrop-filter: blur(10px);
     min-width: 100px;
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 0 30px rgba(255, 107, 53, 0.4);
 }
 
 .countdown-value {
