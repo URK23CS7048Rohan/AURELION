@@ -2494,36 +2494,89 @@ body.light-theme .navbar {
     position: relative;
     bottom: 0px;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%,
-            #4a9eff 0%,
-            #2d5f8f 30%,
-            #1a4d7a 50%,
-            #0f2940 70%,
-            #000814 100%);
-    animation: earthRotate 30s linear 0s infinite;
-    box-shadow: 0px 0 20px rgba(74, 158, 255, 0.3),
-        -5px 0px 15px rgba(195, 244, 255, 0.4) inset,
-        15px 2px 25px #000 inset,
-        -24px -2px 34px rgba(195, 244, 255, 0.6) inset,
-        250px 0px 44px rgba(0, 0, 0, 0.4) inset,
-        150px 0px 38px rgba(0, 0, 0, 0.7) inset;
-
-    /* Add continents pattern */
-    background-image:
-        radial-gradient(ellipse 80px 60px at 40% 35%, rgba(34, 139, 34, 0.7) 0%, transparent 50%),
-        radial-gradient(ellipse 90px 70px at 60% 45%, rgba(139, 90, 43, 0.6) 0%, transparent 50%),
-        radial-gradient(ellipse 70px 50px at 35% 55%, rgba(34, 139, 34, 0.6) 0%, transparent 50%),
-        radial-gradient(ellipse 60px 80px at 55% 65%, rgba(139, 90, 43, 0.5) 0%, transparent 50%),
-        radial-gradient(circle at 30% 30%, #4a9eff 0%, #2d5f8f 30%, #1a4d7a 50%, #0f2940 70%, #000814 100%);
+    background:
+        linear-gradient(135deg,
+            #0a0e27 0%,
+            #1a1f3a 25%,
+            #0f172a 50%,
+            #1e293b 75%,
+            #0a0e27 100%);
+    animation: codeRotate 20s linear infinite;
+    box-shadow:
+        0 0 40px rgba(168, 85, 247, 0.4),
+        0 0 80px rgba(6, 182, 212, 0.2),
+        inset -10px -10px 30px rgba(168, 85, 247, 0.3),
+        inset 10px 10px 30px rgba(6, 182, 212, 0.2);
+    overflow: hidden;
 }
 
-@keyframes earthRotate {
+/* Binary code streams */
+.section-banner::before {
+    content: '01001000 01100001 01100011 01101011 01100001 01110100 01101000 01101111 01101110 00100001 01000001 01001001 00100000 01000011 01101111 01100100 01100101 00100000 01000100 01100101 01110110 01100101 01101100 01101111 01110000 01101101 01100101 01101110 01110100';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: -100px;
+    font-family: var(--font-mono);
+    font-size: 8px;
+    color: rgba(168, 85, 247, 0.4);
+    word-wrap: break-word;
+    line-height: 12px;
+    animation: scrollBinary 15s linear infinite;
+    text-shadow: 0 0 5px rgba(168, 85, 247, 0.6);
+}
+
+/* Matrix-style grid */
+.section-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-radius: 50%;
+    animation: gridPulse 3s ease-in-out infinite;
+}
+
+@keyframes codeRotate {
     0% {
         transform: rotate(0deg);
+        filter: hue-rotate(0deg);
     }
 
     100% {
         transform: rotate(360deg);
+        filter: hue-rotate(30deg);
+    }
+}
+
+@keyframes scrollBinary {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(100px) translateX(50px);
+        opacity: 0.3;
+    }
+}
+
+@keyframes gridPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
     }
 }
 
