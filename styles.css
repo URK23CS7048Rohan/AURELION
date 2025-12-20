@@ -2050,7 +2050,7 @@ body.light-theme .navbar {
     justify-content: center;
     padding: var(--spacing-lg);
     text-align: center;
-    min-height: 180px;
+    min-height: 220px;
     transition: all 0.3s ease;
 }
 
@@ -2060,8 +2060,8 @@ body.light-theme .navbar {
 }
 
 .partner-logo {
-    max-width: 120px;
-    max-height: 100px;
+    max-width: 180px;
+    max-height: 140px;
     object-fit: contain;
     filter: brightness(1.1);
     transition: transform 0.3s ease;
@@ -2075,7 +2075,7 @@ body.light-theme .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 140px;
 }
 
 .partner-name {
