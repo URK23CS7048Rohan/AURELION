@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // COUNTDOWN TIMER
 // ==========================================
 function initCountdown() {
-    // Set the date for the hackathon: March 03, 2026 08:00:00
-    const hackathonDate = new Date('2026-03-03T08:00:00').getTime();
+    // Set the date for the hackathon: February 27, 2026 08:00:00
+    const hackathonDate = new Date('2026-02-27T08:00:00').getTime();
 
     const daysElement = document.getElementById('days');
     const hoursElement = document.getElementById('hours');
@@ -368,7 +368,7 @@ console.log('%c🚀 AURELION 2026 🚀', 'color: #a855f7; font-size: 24px; font-
 console.log('%cInnovate for a Better Tomorrow', 'color: #06b6d4; font-size: 16px;');
 console.log('%cAI Towards Food, Water, Health & Energy', 'color: #9ca3af; font-size: 12px;');
 console.log('%c\nInterested in the code? We love curious minds!', 'color: #d1d5db; font-size: 14px;');
-console.log('%cJoin us at AURELION 2026 on March 03, 2026', 'color: #a855f7; font-size: 14px; font-weight: bold;');
+console.log('%cJoin us at AURELION 2026 on February 27, 2026', 'color: #a855f7; font-size: 14px; font-weight: bold;');
 
 // ==========================================
 // EASTER EGG TV MODAL
