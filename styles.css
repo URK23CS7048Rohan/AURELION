@@ -957,19 +957,30 @@ a {
     animation: gradientFlow 3s ease-in-out infinite;
 }
 
-/* Hero title gets extra glitch effect - Vibrant Matte Orange */
+/* Hero title - 3D EXTRUDED ORANGE TEXT like reference */
 .hero-title .gradient-text {
     position: relative;
-    /* Richer orange but still bright */
-    background: linear-gradient(135deg, #ffe5b4, #ffbf69, #ff9f1c) !important;
-    background-size: 200% auto !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: transparent !important;
-    animation: gradientFlow 5s ease infinite;
-    /* Warm glow */
-    filter: drop-shadow(0 0 15px rgba(255, 159, 28, 0.8)) drop-shadow(0 0 35px rgba(255, 120, 0, 0.5));
+    /* Bright orange color */
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ff8c00 !important;
+    color: #ff8c00 !important;
+    animation: none;
+    filter: none;
+    /* 3D extrusion effect - stacked shadows for depth */
+    text-shadow:
+        /* Dark red 3D extrusion layers */
+        1px 1px 0 #cc3300,
+        2px 2px 0 #cc3300,
+        3px 3px 0 #aa2200,
+        4px 4px 0 #aa2200,
+        5px 5px 0 #881100,
+        6px 6px 0 #881100,
+        7px 7px 0 #660000,
+        8px 8px 0 #660000,
+        /* Subtle glow */
+        0 0 20px rgba(255, 140, 0, 0.5);
 }
 
 /* Pseudo-elements removed to eliminate glitch lines */
