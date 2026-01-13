@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const theme = body.classList.contains('light-theme') ? 'light' : 'dark';
             localStorage.setItem('theme', theme);
 
+            // Ensure video keeps playing after theme switch
+            const heroVideo = document.querySelector('.hero-video');
+            if (heroVideo && heroVideo.paused) {
+                heroVideo.play();
+            }
+
             // Add a little animation to theme toggle
             this.style.transform = 'rotate(360deg)';
             setTimeout(() => {
