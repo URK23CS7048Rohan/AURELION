@@ -343,6 +343,7 @@ body.light-theme .moon-icon {
     color: #ffffff;
     font-weight: 700;
     font-size: 1.1rem;
+    font-family: 'Orbitron', sans-serif;
     padding: 1rem 2.5rem;
     box-shadow: 0 4px 20px rgba(255, 107, 53, 0.5), 0 0 40px rgba(255, 140, 66, 0.3);
     border: 2px solid rgba(255, 200, 150, 0.3);
@@ -677,15 +678,21 @@ body.light-theme .moon-icon {
 }
 
 .info-label {
-    font-size: 0.75rem;
-    background: linear-gradient(135deg, #ff8c42, #ffb366);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 0.85rem;
+    /* 3D effect like AURELION logo */
+    color: #ff8c00 !important;
+    -webkit-text-fill-color: #ff8c00 !important;
+    background: none;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: 'Orbitron', sans-serif;
+    /* 3D extrusion effect */
+    text-shadow:
+        1px 1px 0 #cc3300,
+        2px 2px 0 #aa2200,
+        3px 3px 0 #881100,
+        0 0 10px rgba(255, 140, 0, 0.4);
 }
 
 .info-value {
