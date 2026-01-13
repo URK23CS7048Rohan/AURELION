@@ -971,32 +971,9 @@ a {
     filter: drop-shadow(0 0 20px rgba(255, 123, 0, 0.8)) drop-shadow(0 0 40px rgba(255, 85, 0, 0.6)) drop-shadow(0 0 80px rgba(255, 60, 0, 0.4));
 }
 
-.hero-title .gradient-text::before,
-.hero-title .gradient-text::after {
-    content: 'AURELION';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    background-size: inherit;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+/* Pseudo-elements removed to eliminate glitch lines */
 
-.hero-title .gradient-text::before {
-    animation: glitchTop 2s infinite linear alternate-reverse;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-    opacity: 0.8;
-}
-
-.hero-title .gradient-text::after {
-    animation: glitchBottom 2.5s infinite linear alternate-reverse;
-    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
-    opacity: 0.8;
-}
+/* ::after pseudo-element removed */
 
 /* Gradient flow animation */
 @keyframes gradientFlow {
