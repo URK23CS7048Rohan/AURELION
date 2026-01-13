@@ -957,19 +957,18 @@ a {
     animation: gradientFlow 3s ease-in-out infinite;
 }
 
-/* Hero title gets extra glitch effect - More Orange, Less White */
+/* Hero title gets extra glitch effect - Matte Creamy Orange (User Reference) */
 .hero-title .gradient-text {
     position: relative;
-    background: linear-gradient(180deg, #FFFFFF 10%, #ff8800 60%, #ff5500 100%) !important;
-    background-size: 100% 100% !important;
+    background: linear-gradient(135deg, #ffd68a, #ffc05c, #ffaa33) !important;
+    background-size: 200% auto !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     color: transparent !important;
-    animation: none;
-    /* Removed animation for cleaner look on vertical gradient */
-    /* Clean glow */
-    filter: drop-shadow(0 0 10px rgba(255, 136, 0, 0.6)) drop-shadow(0 0 20px rgba(255, 85, 0, 0.4));
+    animation: gradientFlow 5s ease infinite;
+    /* Soft, diffused glow */
+    filter: drop-shadow(0 0 15px rgba(255, 170, 51, 0.6)) drop-shadow(0 0 30px rgba(255, 136, 0, 0.4));
 }
 
 /* Pseudo-elements removed to eliminate glitch lines */
