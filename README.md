@@ -1,135 +1,150 @@
-# AURELION 2026 - Hackathon Onboarding Website
+# AURELION 2026 🚀
 
-A professional, modern hackathon onboarding website for AURELION 2026 at Karunya Institute of Technology and Sciences with ACM.
+## 24-Hour National Hackathon
+
+**Innovate for a Better Tomorrow**
+
+[![Website](https://img.shields.io/badge/Live%20Website-AURELION-orange?style=for-the-badge)](https://urk23cs7048rohan.github.io/AURELION/)
+
+---
+
+## 📅 Event Details
+
+| | |
+|---|---|
+| **Date** | February 27–28, 2026 |
+| **Venue** | Karunya Institute of Technology and Sciences, Coimbatore |
+| **Duration** | 24 Hours |
+| **Participants** | 400+ Students |
+| **Registration Fee** | ₹600 per team |
+| **Team Size** | 2-4 members |
+| **Organized By** | IEEE Computer Society Karunya Chapter & KITS ACM Student Chapter |
+
+---
+
+## 🎯 About AURELION
+
+AURELION 2026 is the flagship national-level 24-hour hackathon bringing together innovative minds from across India to solve real-world challenges through technology.
+
+---
+
+## 📍 Official Event Schedule & Timeline
+
+### Day 1 – February 27, 2026
+
+| Time | Activity |
+|------|----------|
+| **08:00 AM – 09:00 AM** | **Participant Check-in, Swag Distribution & Verification** |
+| | • All teams report to the registration desk |
+| | • Teams must present confirmation emails and valid college ID cards |
+| | • Distribution of AURELION 2026 T-Shirts & Participation Kits |
+| | • *Note: Participants are asked to wear their t-shirts during the hackathon* |
+| **09:00 AM – 10:00 AM** | **Inauguration Ceremony** |
+| | • Welcome address by Faculty Coordinators |
+| | • Keynote speech by Industry Guests/Sponsors |
+| | • Briefing on Hackathon Rules and Code of Conduct |
+| **10:00 AM** | **🚀 HACKATHON BEGINS** |
+| | • Problem statements unlocked |
+| | • 24-Hour Countdown Timer Starts |
+| **10:00 AM – 01:00 PM** | **Coding Phase 1: Ideation & Setup** |
+| | • Teams finalize ideas, select tech stacks, and set up development environments |
+| | • Initial architectural design |
+| **01:00 PM – 02:00 PM** | **🍽️ Lunch Break** |
+| | • Provided for all registered participants at the dining area |
+| **02:00 PM – 05:00 PM** | **Coding Phase 2: Core Development** |
+| | • Intensive development session |
+| | • Mentors circulate to assist teams with technical blockers |
+| **05:00 PM – 05:30 PM** | **☕ Evening Tea & Snacks** |
+| | • Refreshment break to recharge participants |
+| **05:30 PM – 08:00 PM** | **Mentoring Round 1 (Progress Check)** |
+| | • First official checkpoint |
+| | • Teams demonstrate basic logic flow or working modules to mentors |
+| **08:00 PM – 09:00 PM** | **🍽️ Dinner Break** |
+
+### Overnight – February 27-28, 2026
+
+| Time | Activity |
+|------|----------|
+| **09:00 PM – 08:00 AM** | **Phase 3: The Overnight Sprint** |
+| | • Continuous overnight coding block |
+| | • Teams work on integrating frontend/backend and finalizing prototypes |
+
+### Day 2 – February 28, 2026
+
+| Time | Activity |
+|------|----------|
+| **08:00 AM – 09:00 AM** | **🍳 Breakfast** |
+| | • Breakfast service for all participants |
+| **09:00 AM – 10:00 AM** | **Final Polish & Code Freeze** |
+| | • Bug fixing, UI cleanup, and final testing |
+| | • **⚠️ 10:00 AM Hard Stop:** No code commits allowed |
+| | • Repository links and slides must be submitted |
+| **10:00 AM – 01:00 PM** | **Final Judging Round** |
+| | • Teams pitch solutions to the panel of judges (5-7 mins per team) |
+| | • Live demonstration of the working prototype |
+| **01:00 PM – 02:00 PM** | **🍽️ Lunch Break** |
+| **02:00 PM – 03:30 PM** | **🏆 Valedictory Ceremony & Awards** |
+| | • Announcement of winners |
+| | • Closing address and Vote of Thanks |
+| **03:30 PM – 04:30 PM** | **Closing** |
+| | • Teams checkout and departure |
+
+---
+
+## 🔥 Hackathon Tracks
+
+| Track | Description |
+|-------|-------------|
+| 🔐 **CyberGuard** | Cybersecurity & Network Safety |
+| ♻️ **EcoTech** | Sustainable Technology & Green Innovation |
+| 🏥 **MedInnovate** | Healthcare & Medical Technology |
+| 🎓 **Smart Learn** | AI-Powered Education |
+| ⚡ **FinFlow** | FinTech & Digital Payments |
+| 🌾 **AgroBot** | Agritech & Farm Automation |
+| 🏙️ **UrbanPulse** | Smart City & IoT |
+| 🤖 **NexGen AI** | Cutting-edge AI Applications |
+
+---
+
+## ✨ What Participants Get
+
+- 🏆 24-hour hackathon experience
+- 👕 Official AURELION 2026 t-shirt & participation kit
+- 🍽️ Meals: Lunch, Dinner, Breakfast & Refreshments
+- 👨‍🏫 Mentorship from industry experts
+- 📜 Certificate of participation
+- 💰 Prize pool worth ₹50,000+
+
+---
+
+## 👨‍🏫 Coordinators
+
+### Faculty Coordinators
+- **Dr. G. Naveen Sundar** - IEEE CS Faculty Coordinator - 📞 +91 98431 66880
+- **Dr. D. Narmadha** - ACM Faculty Coordinator - 📞 +91 98434 82975
+
+### Student Coordinators
+- **Rajhavel V S** - ACM President - 📞 +91 9043000313
+- **SREMADUKRISHNA V** - IEEE CS President - 📞 +91 9363870236
+
+### Contact Email
+📧 acmkarunya@gmail.com
+
+---
 
 ## 🌐 Live Website
-**https://urk23cs7048rohan.github.io/AURELION/**
 
-## ✨ Features
+**[https://urk23cs7048rohan.github.io/AURELION/](https://urk23cs7048rohan.github.io/AURELION/)**
 
-### Design & Aesthetics
-- **Professional Glassmorphism** - Refined glass-effect cards with subtle blur and transparency
-- **Dark/Light Theme Toggle** - Smooth theme switching with localStorage persistence
-- **Responsive Design** - Mobile-first approach, works beautifully on all devices
-- **Premium Typography** - 6 carefully selected Google Fonts for visual hierarchy
+---
 
-### Interactive Elements
-- **Live Countdown Timer** - Real-time countdown to hackathon start (March 3, 2026)
-- **FAQ Accordion** - Expandable questions with smooth animations
-- **Smooth Scrolling** - Seamless navigation between sections
-- **Professional SVG Icons** - Clean, consistent iconography throughout
+## 👨‍💻 Website Credits
 
-### Content Sections
-1. **Hero** - Event branding with key information and CTAs
-2. **About** - Mission, vision, and organizers
-3. **Tracks** - 8 hackathon domains/challenges
-4. **Participation** - Eligibility and benefits
-5. **Timeline** - 24-hour event schedule
-6. **Registration** - Pricing and team details
-7. **FAQ** - Common questions and answers
-8. **Contact** - Venue and coordinator information
-
-## 🚀 Technology Stack
-
-- **HTML5** - Semantic structure
-- **CSS3** - Modern features (Grid, Flexbox, Custom Properties)
-- **Vanilla JavaScript** - No dependencies
-- **Google Fonts** - Typography
-- **GitHub Pages** - Free hosting
-
-## 📁 Project Structure
-
-```
-├── index.html          # Main HTML structure
-├── styles.css          # Complete design system and animations
-├── script.js           # Interactive functionality
-└── README.md           # Documentation
-```
-
-## 🎨 Design System
-
-### Color Palette
-- **Primary**: Deep blues and purples (#8b5cf6, #0ea5e9)
-- **Background**: Dark professional tones (#0f1115, #1a1d24)
-- **Accent**: Professional cyan (#0891b2)
-- **Text**: High-contrast whites and grays
-
-### Typography
-- **Display**: Orbitron (headings)
-- **Heading**: Inter (section titles)
-- **Subheading**: Space Grotesk (card titles)
-- **Body**: Inter (paragraphs)
-
-### Spacing
-- Mobile-first with responsive breakpoints
-- Generous whitespace for professional look
-- Consistent 8px base unit
-
-## 🛠️ Customization
-
-### Update Event Details
-Edit `index.html` to change:
-- Event name, dates, venue
-- Registration fee and team size
-- Timeline schedule
-- Contact information
-
-### Modify Theme Colors
-Edit CSS variables in `styles.css`:
-```css
-:root {
-    --color-purple: #8b5cf6;
-    --color-accent: #0ea5e9;
-    /* ... more variables */
-}
-```
-
-### Adjust Animations
-Control animation intensity in `styles.css`:
-- Reduce `animation-duration` for faster animations
-- Adjust `opacity` values for subtlety
-- Modify `transform` values for movement intensity
-
-## 📱 Browser Support
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- No IE11 support
-
-## 🚀 Deployment
-
-### GitHub Pages (Current)
-Already deployed at: https://urk23cs7048rohan.github.io/AURELION/
-
-### Alternative Hosting Options
-
-**Vercel** - Import from GitHub:
-1. Go to vercel.com
-2. Import your GitHub repository
-3. Deploy automatically
-
-**Netlify** - Import from GitHub:
-1. Go to netlify.com
-2. Import your GitHub repository
-3. Deploy automatically
-
-## 📄 License
-
-Free to use for educational and non-commercial purposes.
-
-## 👨‍💻 Credits
-
-- **Design & Development**: Created for AURELION 2026
-- **Organized By**: IEEE Computer Society Karunya Chapter & KITS ACM Student Chapter
-- **Institution**: Karunya Institute of Technology and Sciences
-
-## 📞 Contact
-
-For queries about the hackathon:
-- **Dr. G. Naveen Sundar** - IEEE CS Faculty Coordinator - +91 98431 66880
-- **Dr. D. Narmadha** - ACM Faculty Coordinator - +91 98434 82975
+**Developed by:** Rohan Chowdhary  
+📧 rohanchowdhary@karunya.edu.in
 
 ---
 
 **Built with ❤️ for AURELION 2026**
+
+*Organized by IEEE CS Karunya Chapter & KITS ACM Student Chapter*
