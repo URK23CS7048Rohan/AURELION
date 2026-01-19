@@ -1,6 +1,6 @@
 /* ==========================================
    AURELION 2026 - Premium Hackathon Website
-   Design System & Styles
+   Design System & Styles - MINIMALIST B/W THEME
    ========================================== */
 
 /* ==========================================
@@ -8,44 +8,44 @@
    ========================================== */
 :root {
     /* Color Palette - MINIMALIST BLACK & WHITE */
-    /* Primary Colors */
-    --color-orange: #000000;
-    --color-coral: #1a1a1a;
-    --color-peach: #333333;
-    --color-yellow: #555555;
-    --color-cream: #777777;
-    --color-orange-light: #333333;
-    --color-orange-dark: #000000;
+    /* Monochrome Palette */
+    --color-orange: #ffffff;
+    --color-coral: #e0e0e0;
+    --color-peach: #c0c0c0;
+    --color-yellow: #a0a0a0;
+    --color-cream: #808080;
+    --color-orange-light: #e0e0e0;
+    --color-orange-dark: #ffffff;
 
     /* Base Colors */
     --color-white: #ffffff;
     --color-black: #000000;
 
-    /* Backgrounds - Light theme */
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f5f5f5;
-    --color-bg-tertiary: #eeeeee;
+    /* Backgrounds - Keep dark for video */
+    --color-bg-primary: #0a0a0f;
+    --color-bg-secondary: #15151f;
+    --color-bg-tertiary: #1a1a24;
 
-    /* Text - Dark on light */
-    --color-text-primary: #000000;
-    --color-text-secondary: #333333;
-    --color-text-muted: #666666;
+    /* Text */
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e0e0e0;
+    --color-text-muted: #a0a0a0;
 
-    /* Accents */
-    --color-accent: #000000;
-    --color-accent-hover: #333333;
+    /* Accents - Monochrome */
+    --color-accent: #ffffff;
+    --color-accent-hover: #e0e0e0;
 
     /* Gradients - Monochrome */
-    --gradient-primary: linear-gradient(135deg, #000000, #333333);
-    --gradient-secondary: linear-gradient(135deg, #1a1a1a, #444444);
-    --gradient-text: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #333333 50%, #555555 75%, #777777 100%);
+    --gradient-primary: linear-gradient(135deg, #ffffff, #c0c0c0);
+    --gradient-secondary: linear-gradient(135deg, #e0e0e0, #a0a0a0);
+    --gradient-text: linear-gradient(135deg, #ffffff 0%, #e0e0e0 25%, #c0c0c0 50%, #a0a0a0 75%, #808080 100%);
 
-    /* Glass Effect - Light */
-    --glass-bg: rgba(255, 255, 255, 0.9);
-    --glass-border: rgba(0, 0, 0, 0.1);
-    --glass-shadow: rgba(0, 0, 0, 0.1);
+    /* Glass Effect - Modern */
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-shadow: rgba(0, 0, 0, 0.4);
 
-    /* Typography - Clean & Modern */
+    /* Typography - Clean Stack */
     --font-display: 'Orbitron', sans-serif;
     --font-heading: 'Syne', sans-serif;
     --font-subheading: 'Space Grotesk', sans-serif;
@@ -64,19 +64,19 @@
     /* Border Radius - Sharp & Modern */
     --radius-sm: 0.25rem;
     --radius-md: 0.5rem;
-    --radius-lg: 1rem;
-    --radius-xl: 1.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
 
     /* Transitions - Smooth */
     --transition-fast: 0.15s ease-out;
-    --transition-normal: 0.25s ease-out;
-    --transition-slow: 0.4s ease-out;
+    --transition-normal: 0.3s ease-out;
+    --transition-slow: 0.5s ease-out;
 
     /* Shadows - Subtle */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
-    --shadow-glow: 0 0 40px rgba(0, 0, 0, 0.2);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 40px rgba(255, 255, 255, 0.2);
 }
 
 /* Light Theme */
@@ -339,19 +339,19 @@ body.light-theme .moon-icon {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff6b35, #ff8c42);
-    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    color: #000000;
     font-weight: 700;
     font-size: 1.1rem;
     font-family: 'Orbitron', sans-serif;
     padding: 1rem 2.5rem;
-    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.5), 0 0 40px rgba(255, 140, 66, 0.3);
-    border: 2px solid rgba(255, 200, 150, 0.3);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6), 0 0 50px rgba(255, 140, 66, 0.4);
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.25);
 }
 
 @keyframes gradientShift {
@@ -370,13 +370,13 @@ body.light-theme .moon-icon {
 
     0%,
     100% {
-        box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4),
-            0 0 40px rgba(255, 140, 66, 0.3);
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2),
+            0 0 40px rgba(255, 255, 255, 0.15);
     }
 
     50% {
-        box-shadow: 0 4px 30px rgba(255, 107, 53, 0.6),
-            0 0 60px rgba(255, 140, 66, 0.5);
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.35),
+            0 0 60px rgba(255, 255, 255, 0.25);
     }
 }
 
@@ -592,31 +592,29 @@ body.light-theme .moon-icon {
     align-items: center;
     gap: 0.5rem;
     padding: 0.6rem 1.5rem;
-    background: rgba(255, 107, 53, 0.1);
-    border: 1px solid rgba(255, 140, 66, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2rem;
     backdrop-filter: blur(10px);
     margin-bottom: var(--spacing-md);
-    color: var(--color-orange);
+    color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     animation: none !important;
     transform: none !important;
 }
 
 .hero-title {
     margin-bottom: var(--spacing-sm);
-    animation: heroTitleEntrance 1.2s ease forwards;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5), 0 4px 40px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title .gradient-text {
-    filter: drop-shadow(0 0 30px rgba(255, 140, 66, 0.6)) drop-shadow(0 0 60px rgba(255, 107, 53, 0.4));
-    animation: glowPulse 3s ease-in-out infinite, textShimmer 4s linear infinite;
-    background-size: 200% auto;
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.2));
 }
 
 .hero-subtitle {
@@ -624,7 +622,7 @@ body.light-theme .moon-icon {
     font-weight: 600;
     color: #ffffff;
     margin-bottom: var(--spacing-xs);
-    animation: fadeInUp 1s ease 0.5s backwards, subtleFloat 4s ease-in-out infinite 1.5s;
+    animation: fadeInUp 0.8s ease 0.4s backwards;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -634,64 +632,10 @@ body.light-theme .moon-icon {
     font-weight: 500;
     color: #e0e0e0;
     margin-bottom: var(--spacing-xl);
-    animation: fadeInUp 1s ease 0.8s backwards, subtleFloat 5s ease-in-out infinite 2s;
+    animation: fadeInUp 0.8s ease 0.6s backwards;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     letter-spacing: 3px;
     font-style: italic;
-}
-
-/* Hero Animations */
-@keyframes heroTitleEntrance {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.9);
-        filter: blur(10px);
-    }
-
-    50% {
-        opacity: 1;
-        filter: blur(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0);
-    }
-}
-
-@keyframes glowPulse {
-
-    0%,
-    100% {
-        filter: drop-shadow(0 0 30px rgba(255, 140, 66, 0.6)) drop-shadow(0 0 60px rgba(255, 107, 53, 0.4));
-    }
-
-    50% {
-        filter: drop-shadow(0 0 50px rgba(255, 140, 66, 0.9)) drop-shadow(0 0 80px rgba(255, 107, 53, 0.7));
-    }
-}
-
-@keyframes textShimmer {
-    0% {
-        background-position: -200% center;
-    }
-
-    100% {
-        background-position: 200% center;
-    }
-}
-
-@keyframes subtleFloat {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
 }
 
 .hero-info {
@@ -708,23 +652,23 @@ body.light-theme .moon-icon {
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 1.5rem;
-    /* More transparent background */
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(255, 140, 66, 0.02));
-    border: 1px solid rgba(255, 140, 66, 0.15);
+    /* Monochrome background */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: var(--radius-lg);
     backdrop-filter: blur(10px);
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
         0 4px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .info-item:hover {
-    border-color: rgba(255, 140, 66, 0.5);
+    border-color: rgba(255, 255, 255, 0.4);
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
         0 8px 32px rgba(0, 0, 0, 0.3),
-        0 0 20px rgba(255, 107, 53, 0.2);
+        0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .info-icon {
@@ -733,7 +677,7 @@ body.light-theme .moon-icon {
 
 .info-label {
     font-size: 0.85rem;
-    /* White for dark video background */
+    /* 3D effect - white monochrome */
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
     background: none;
@@ -741,20 +685,20 @@ body.light-theme .moon-icon {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: 'Orbitron', sans-serif;
-    /* 3D extrusion effect - dark shadows */
+    /* 3D extrusion effect - grey shadows */
     text-shadow:
-        1px 1px 0 #333333,
-        2px 2px 0 #555555,
-        3px 3px 0 #777777,
-        0 0 10px rgba(0, 0, 0, 0.3);
+        1px 1px 0 #555555,
+        2px 2px 0 #777777,
+        3px 3px 0 #999999,
+        0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .info-value {
     font-weight: 600;
     font-size: 1.05rem;
-    color: #ffffff;
+    color: #e0e0e0;
     font-family: 'Inter', sans-serif;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta {
@@ -775,30 +719,30 @@ body.light-theme .moon-icon {
 .countdown-item {
     text-align: center;
     padding: 1.25rem 1.5rem;
-    background: linear-gradient(145deg, rgba(50, 45, 55, 0.5), rgba(40, 35, 45, 0.4));
-    border: 1px solid rgba(255, 140, 66, 0.25);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: var(--radius-lg);
     backdrop-filter: blur(25px);
     min-width: 90px;
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
         inset 0 -1px 0 rgba(0, 0, 0, 0.1),
         0 4px 20px rgba(0, 0, 0, 0.2),
-        0 0 30px rgba(255, 107, 53, 0.2),
-        0 0 60px rgba(255, 140, 66, 0.1);
+        0 0 30px rgba(255, 255, 255, 0.1),
+        0 0 60px rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
 }
 
 .countdown-item:hover {
-    border-color: rgba(255, 140, 66, 0.45);
-    background: linear-gradient(145deg, rgba(60, 55, 65, 0.55), rgba(50, 45, 55, 0.45));
+    border-color: rgba(255, 255, 255, 0.4);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
     transform: translateY(-2px);
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
         inset 0 -1px 0 rgba(0, 0, 0, 0.1),
         0 4px 20px rgba(0, 0, 0, 0.2),
-        0 0 40px rgba(255, 107, 53, 0.3),
-        0 0 80px rgba(255, 140, 66, 0.15);
+        0 0 40px rgba(255, 255, 255, 0.15),
+        0 0 80px rgba(255, 255, 255, 0.08);
 }
 
 .countdown-value {
@@ -806,17 +750,17 @@ body.light-theme .moon-icon {
     font-size: 2.25rem;
     font-weight: 700;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #ff8c42, #ffa552, #ff6b35);
+    background: linear-gradient(135deg, #ffffff, #e0e0e0, #c0c0c0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 8px rgba(255, 140, 66, 0.4));
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
 .countdown-label {
     display: block;
     font-size: 0.7rem;
-    color: rgba(255, 200, 150, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     margin-top: 0.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -1020,10 +964,10 @@ a {
     animation: gradientFlow 3s ease-in-out infinite;
 }
 
-/* Hero title - 3D EXTRUDED WHITE TEXT - for dark video background */
+/* Hero title - 3D EXTRUDED WHITE TEXT - minimalist */
 .hero-title .gradient-text {
     position: relative;
-    /* White color for visibility on dark video */
+    /* White color for minimalist theme */
     background: none !important;
     -webkit-background-clip: unset !important;
     background-clip: unset !important;
@@ -1031,19 +975,19 @@ a {
     color: #ffffff !important;
     animation: none;
     filter: none;
-    /* 3D extrusion effect - dark shadows for depth */
+    /* 3D extrusion effect - grey shadows for depth */
     text-shadow:
-        /* Dark 3D extrusion layers */
-        1px 1px 0 #333333,
-        2px 2px 0 #333333,
-        3px 3px 0 #555555,
-        4px 4px 0 #555555,
+        /* Grey 3D extrusion layers */
+        1px 1px 0 #555555,
+        2px 2px 0 #555555,
+        3px 3px 0 #666666,
+        4px 4px 0 #666666,
         5px 5px 0 #777777,
         6px 6px 0 #777777,
-        7px 7px 0 #999999,
-        8px 8px 0 #999999,
-        /* Subtle shadow */
-        0 0 30px rgba(0, 0, 0, 0.5);
+        7px 7px 0 #888888,
+        8px 8px 0 #888888,
+        /* Subtle glow */
+        0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Pseudo-elements removed to eliminate glitch lines */
