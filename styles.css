@@ -733,28 +733,28 @@ body.light-theme .moon-icon {
 
 .info-label {
     font-size: 0.85rem;
-    /* 3D effect - monochrome */
-    color: #000000 !important;
-    -webkit-text-fill-color: #000000 !important;
+    /* White for dark video background */
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
     background: none;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: 'Orbitron', sans-serif;
-    /* 3D extrusion effect - grey shadows */
+    /* 3D extrusion effect - dark shadows */
     text-shadow:
         1px 1px 0 #333333,
         2px 2px 0 #555555,
         3px 3px 0 #777777,
-        0 0 10px rgba(0, 0, 0, 0.2);
+        0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .info-value {
     font-weight: 600;
     font-size: 1.05rem;
-    color: #333333;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
-    text-shadow: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero-cta {
@@ -1020,20 +1020,20 @@ a {
     animation: gradientFlow 3s ease-in-out infinite;
 }
 
-/* Hero title - 3D EXTRUDED BLACK TEXT - minimalist */
+/* Hero title - 3D EXTRUDED WHITE TEXT - for dark video background */
 .hero-title .gradient-text {
     position: relative;
-    /* Black color for minimalist theme */
+    /* White color for visibility on dark video */
     background: none !important;
     -webkit-background-clip: unset !important;
     background-clip: unset !important;
-    -webkit-text-fill-color: #000000 !important;
-    color: #000000 !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
     animation: none;
     filter: none;
-    /* 3D extrusion effect - grey shadows for depth */
+    /* 3D extrusion effect - dark shadows for depth */
     text-shadow:
-        /* Grey 3D extrusion layers */
+        /* Dark 3D extrusion layers */
         1px 1px 0 #333333,
         2px 2px 0 #333333,
         3px 3px 0 #555555,
@@ -1043,7 +1043,7 @@ a {
         7px 7px 0 #999999,
         8px 8px 0 #999999,
         /* Subtle shadow */
-        0 0 20px rgba(0, 0, 0, 0.3);
+        0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Pseudo-elements removed to eliminate glitch lines */
