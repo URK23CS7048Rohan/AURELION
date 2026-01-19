@@ -3195,7 +3195,7 @@ body.light-theme .countdown-label {
 
 .prize-card {
     text-align: center;
-    padding: var(--spacing-xl);
+    padding: var(--spacing-md);
     border-radius: var(--radius-xl);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -3206,8 +3206,8 @@ body.light-theme .countdown-label {
 }
 
 .prize-icon {
-    font-size: 4rem;
-    margin-bottom: var(--spacing-md);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
     animation: bounce 2s ease-in-out infinite;
 }
 
@@ -3224,14 +3224,14 @@ body.light-theme .countdown-label {
 }
 
 .prize-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: var(--font-display);
     color: var(--color-text-primary);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 .prize-value {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 800;
     font-family: var(--font-display);
     background: linear-gradient(135deg, #ff6b35, #ff8c42, #ffa552);
@@ -3248,10 +3248,10 @@ body.light-theme .countdown-label {
 }
 
 .prize-tier {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--color-orange);
     font-weight: 600;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 .prize-description {
