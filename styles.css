@@ -7,45 +7,45 @@
    CSS VARIABLES & DESIGN TOKENS
    ========================================== */
 :root {
-    /* Color Palette - VIBRANT & FUN */
-    /* Orange-Coral Color Palette */
-    --color-orange: #ff6b35;
-    --color-coral: #ff8c42;
-    --color-peach: #ffa552;
-    --color-yellow: #ffb861;
-    --color-cream: #ffd280;
-    --color-orange-light: #ffa552;
-    --color-orange-dark: #ff6b35;
+    /* Color Palette - MINIMALIST BLACK & WHITE */
+    /* Primary Colors */
+    --color-orange: #000000;
+    --color-coral: #1a1a1a;
+    --color-peach: #333333;
+    --color-yellow: #555555;
+    --color-cream: #777777;
+    --color-orange-light: #333333;
+    --color-orange-dark: #000000;
 
     /* Base Colors */
     --color-white: #ffffff;
     --color-black: #000000;
 
-    /* Backgrounds */
-    --color-bg-primary: #0a0a0f;
-    --color-bg-secondary: #15151f;
-    --color-bg-tertiary: #1a1a24;
+    /* Backgrounds - Light theme */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f5f5f5;
+    --color-bg-tertiary: #eeeeee;
 
-    /* Text */
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #e0e0e0;
-    --color-text-muted: #a0a0a0;
+    /* Text - Dark on light */
+    --color-text-primary: #000000;
+    --color-text-secondary: #333333;
+    --color-text-muted: #666666;
 
     /* Accents */
-    --color-accent: var(--color-orange);
-    --color-accent-hover: var(--color-coral);
+    --color-accent: #000000;
+    --color-accent-hover: #333333;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--color-orange), var(--color-yellow));
-    --gradient-secondary: linear-gradient(135deg, var(--color-coral), var(--color-peach));
-    --gradient-text: linear-gradient(135deg, #ff6b35 0%, #ff8c42 25%, #ffa552 50%, #ffb861 75%, #ffd280 100%);
+    /* Gradients - Monochrome */
+    --gradient-primary: linear-gradient(135deg, #000000, #333333);
+    --gradient-secondary: linear-gradient(135deg, #1a1a1a, #444444);
+    --gradient-text: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #333333 50%, #555555 75%, #777777 100%);
 
-    /* Glass Effect - VIBRANT */
-    --glass-bg: rgba(255, 255, 255, 0.06);
-    --glass-border: rgba(255, 255, 255, 0.12);
-    --glass-shadow: rgba(0, 0, 0, 0.3);
+    /* Glass Effect - Light */
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-shadow: rgba(0, 0, 0, 0.1);
 
-    /* Typography - Fun Stack */
+    /* Typography - Clean & Modern */
     --font-display: 'Orbitron', sans-serif;
     --font-heading: 'Syne', sans-serif;
     --font-subheading: 'Space Grotesk', sans-serif;
@@ -61,22 +61,22 @@
     --spacing-xl: 4rem;
     --spacing-2xl: 6rem;
 
-    /* Border Radius - Rounded & Soft */
-    --radius-sm: 0.5rem;
-    --radius-md: 1rem;
-    --radius-lg: 1.5rem;
-    --radius-xl: 2rem;
+    /* Border Radius - Sharp & Modern */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
 
     /* Transitions - Smooth */
     --transition-fast: 0.15s ease-out;
     --transition-normal: 0.25s ease-out;
     --transition-slow: 0.4s ease-out;
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 40px rgba(255, 107, 53, 0.4);
+    /* Shadows - Subtle */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Light Theme */
@@ -733,28 +733,28 @@ body.light-theme .moon-icon {
 
 .info-label {
     font-size: 0.85rem;
-    /* 3D effect like AURELION logo */
-    color: #ff8c00 !important;
-    -webkit-text-fill-color: #ff8c00 !important;
+    /* 3D effect - monochrome */
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
     background: none;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-family: 'Orbitron', sans-serif;
-    /* 3D extrusion effect */
+    /* 3D extrusion effect - grey shadows */
     text-shadow:
-        1px 1px 0 #cc3300,
-        2px 2px 0 #aa2200,
-        3px 3px 0 #881100,
-        0 0 10px rgba(255, 140, 0, 0.4);
+        1px 1px 0 #333333,
+        2px 2px 0 #555555,
+        3px 3px 0 #777777,
+        0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .info-value {
     font-weight: 600;
     font-size: 1.05rem;
-    color: #ffffff;
+    color: #333333;
     font-family: 'Inter', sans-serif;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
 }
 
 .hero-cta {
@@ -1020,30 +1020,30 @@ a {
     animation: gradientFlow 3s ease-in-out infinite;
 }
 
-/* Hero title - 3D EXTRUDED ORANGE TEXT like reference */
+/* Hero title - 3D EXTRUDED BLACK TEXT - minimalist */
 .hero-title .gradient-text {
     position: relative;
-    /* Bright orange color */
+    /* Black color for minimalist theme */
     background: none !important;
     -webkit-background-clip: unset !important;
     background-clip: unset !important;
-    -webkit-text-fill-color: #ff8c00 !important;
-    color: #ff8c00 !important;
+    -webkit-text-fill-color: #000000 !important;
+    color: #000000 !important;
     animation: none;
     filter: none;
-    /* 3D extrusion effect - stacked shadows for depth */
+    /* 3D extrusion effect - grey shadows for depth */
     text-shadow:
-        /* Dark red 3D extrusion layers */
-        1px 1px 0 #cc3300,
-        2px 2px 0 #cc3300,
-        3px 3px 0 #aa2200,
-        4px 4px 0 #aa2200,
-        5px 5px 0 #881100,
-        6px 6px 0 #881100,
-        7px 7px 0 #660000,
-        8px 8px 0 #660000,
-        /* Subtle glow */
-        0 0 20px rgba(255, 140, 0, 0.5);
+        /* Grey 3D extrusion layers */
+        1px 1px 0 #333333,
+        2px 2px 0 #333333,
+        3px 3px 0 #555555,
+        4px 4px 0 #555555,
+        5px 5px 0 #777777,
+        6px 6px 0 #777777,
+        7px 7px 0 #999999,
+        8px 8px 0 #999999,
+        /* Subtle shadow */
+        0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Pseudo-elements removed to eliminate glitch lines */
