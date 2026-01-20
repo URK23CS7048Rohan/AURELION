@@ -617,6 +617,48 @@ body.light-theme .moon-icon {
     filter: drop-shadow(0 0 30px rgba(255, 140, 66, 0.6)) drop-shadow(0 0 60px rgba(255, 107, 53, 0.4));
 }
 
+/* Gothic Logo Text Style - High Contrast Version */
+.logo-text-gothic {
+    font-family: 'Cinzel Decorative', 'Times New Roman', serif;
+    font-size: clamp(4rem, 14vw, 9rem);
+    font-weight: 900;
+    display: block;
+    letter-spacing: 0.05em;
+    line-height: 0.9;
+    /* High contrast - solid white/cream color */
+    color: #f5f0e6;
+    -webkit-text-fill-color: #f5f0e6;
+    /* Strong 3D dark purple extrusion for depth and visibility */
+    text-shadow:
+        1px 1px 0 #2d1b4e,
+        2px 2px 0 #261748,
+        3px 3px 0 #1f1340,
+        4px 4px 0 #180f38,
+        5px 5px 0 #110b30,
+        6px 6px 0 #0a0728,
+        7px 7px 0 #050420,
+        8px 8px 20px rgba(0, 0, 0, 0.9);
+    /* Stretched vertical appearance */
+    transform: scaleY(1.2);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* Year text styling */
+.year-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 700;
+    display: block;
+    letter-spacing: 0.3em;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ffd280 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(255, 140, 66, 0.5));
+    margin-top: 1.5rem;
+}
+
 .hero-subtitle {
     font-size: clamp(1.25rem, 3vw, 1.75rem);
     font-weight: 600;
