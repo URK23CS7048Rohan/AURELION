@@ -888,6 +888,104 @@ body.light-theme .moon-icon {
 }
 
 /* ==========================================
+   MENTORS & JUDGES SECTION
+   ========================================== */
+.mentors-section {
+    background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 50%, var(--color-bg-primary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.mentors-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .mentors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .mentors-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mentor-card {
+    text-align: center;
+    padding: var(--spacing-lg);
+    transition: all 0.4s ease;
+}
+
+.mentor-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3);
+}
+
+.mentor-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid transparent;
+    background: linear-gradient(var(--color-bg-primary), var(--color-bg-primary)) padding-box,
+        linear-gradient(135deg, var(--color-orange), var(--color-coral)) border-box;
+    position: relative;
+}
+
+.mentor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+}
+
+.mentor-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+}
+
+.mentor-title {
+    font-size: 0.95rem;
+    color: var(--color-orange);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.mentor-org {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.mentor-location {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+/* ==========================================
    TRACKS SECTION
    ========================================== */
 .tracks {
