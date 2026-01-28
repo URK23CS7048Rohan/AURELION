@@ -59,7 +59,7 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 | **05:30 PM – 08:00 PM** | **Mentoring Round 1 (Progress Check)** |
 | | • First official checkpoint |
 | | • Teams demonstrate basic logic flow or working modules to mentors |
-| **08:00 PM – 09:00 PM** | **🍽️ Dinner Break** |
+| **08:00 PM – 09:00 PM** | **🍽️ Dinner Break** (Self-arranged) |
 
 ### Overnight – February 27-28, 2026
 
@@ -73,8 +73,8 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 
 | Time | Activity |
 |------|----------|
-| **08:00 AM – 09:00 AM** | **🍳 Breakfast** |
-| | • Breakfast service for all participants |
+| **08:00 AM – 09:00 AM** | **🍳 Breakfast** (Self-arranged) |
+| | • Participants to arrange their own breakfast |
 | **09:00 AM – 10:00 AM** | **Final Polish & Code Freeze** |
 | | • Bug fixing, UI cleanup, and final testing |
 | | • **⚠️ 10:00 AM Hard Stop:** No code commits allowed |
@@ -110,7 +110,7 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 
 - 🏆 24-hour hackathon experience
 - 👕 Official AURELION 2026 t-shirt & participation kit
-- 🍽️ Meals: Lunch, Dinner, Breakfast & Refreshments
+- 🍽️ Meals: Lunch & Refreshments
 - 👨‍🏫 Mentorship from industry experts
 - 📜 Certificate of participation
 - 💰 Prize pool worth ₹50,000+
