@@ -109,10 +109,14 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 
 - 🏆 24-hour hackathon experience
 - 👕 Official AURELION 2026 t-shirt & participation kit
-- 🍽️ Meals: Lunch
+- 🍽️ Lunch
 - 👨‍🏫 Mentorship from industry experts
 - 📜 Certificate of participation
 - 💰 Prize pool worth ₹50,000+
+- 🛫 Internship opportunities (2 international)
+- 🎧 ElevenLabs Creator Tier ~₹5,500 per person
+- 🥇 For the overall winning team: ElevenLabs Pro Tier ~₹25,000 per person
+- 🏅 For the “Best Project Built with ElevenLabs”: ~₹1,65,000 per person
 
 ---
 
