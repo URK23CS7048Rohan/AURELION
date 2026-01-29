@@ -81,7 +81,7 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 | **10:00 AM – 01:00 PM** | **Final Judging Round** |
 | | • Teams pitch solutions to the panel of judges (5-7 mins per team) |
 | | • Live demonstration of the working prototype |
-| **01:00 PM – 02:00 PM** | **🍽️ Lunch Break** |
+
 | **02:00 PM – 03:30 PM** | **🏆 Valedictory Ceremony & Awards** |
 | | • Announcement of winners |
 | | • Closing address and Vote of Thanks |
