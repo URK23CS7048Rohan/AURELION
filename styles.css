@@ -377,40 +377,32 @@ section {
 }
 
 .prizes-section {
-    background: var(--color-bg-primary);
+    background: #000000;
     padding-top: 8rem;
     padding-bottom: 8rem;
     position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* Removed orange divider */
 .prizes-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.5), transparent);
+    display: none;
 }
 
 .workshop-section {
-    background: var(--color-bg-secondary);
+    background: linear-gradient(180deg,
+            rgba(30, 41, 59, 0.4) 0%,
+            var(--color-bg-primary) 100%);
     padding-top: 8rem;
     padding-bottom: 8rem;
     position: relative;
+    margin-top: 0;
+    /* Clean separator line */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .workshop-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: linear-gradient(180deg, var(--color-bg-primary) 0%, transparent 100%);
-    pointer-events: none;
-    z-index: 2;
+    display: none;
 }
 
 .workshop-section::after {
@@ -1152,16 +1144,45 @@ body.light-theme .moon-icon {
 }
 
 .mentors-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     gap: var(--spacing-lg);
+    flex-wrap: wrap;
     position: relative;
     z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+/* Mentors Grid Layout */
+.mentors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.mentor-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+@media (min-width: 1200px) {
     .mentors-grid {
-        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: nowrap;
+        /* Force single row on large screens */
+    }
+
+    .mentor-card {
+        max-width: none;
+        /* Allow filling space */
+        flex: 1;
     }
 }
 
@@ -4153,8 +4174,22 @@ body.light-theme .countdown-label {
     color: var(--text-muted);
 }
 
-.speaker-org {
-    font-size: 0.9rem;
-    color: var(--primary-color);
-    font-weight: 500;
+
+/* Terminal Layout Fixes */
+.terminal-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 3rem auto 6rem;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
+
+.terminal-loader .card {
+    flex: 0 1 350px;
+    min-width: 300px;
+}
+
+/* Adjust Organizers section spacing */
