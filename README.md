@@ -30,63 +30,43 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 
 ## 📍 Official Event Schedule & Timeline
 
-### Day 1 – February 27, 2026
+### Day 0 – February 26, 2026: AI Innovation Workshop
 
 | Time | Activity |
 |------|----------|
-| **08:00 AM – 09:00 AM** | **Participant Check-in, Swag Distribution & Verification** |
-| | • All teams report to the registration desk |
-| | • Teams must present confirmation emails and valid college ID cards |
-| | • Distribution of AURELION 2026 T-Shirts & Participation Kits |
-| | • *Note: Participants are asked to wear their t-shirts during the hackathon* |
-| **09:00 AM – 10:00 AM** | **Inauguration Ceremony** |
-| | • Welcome address by Faculty Coordinators |
-| | • Keynote speech by Industry Guests/Sponsors |
-| | • Briefing on Hackathon Rules and Code of Conduct |
-| **10:00 AM** | **🚀 HACKATHON BEGINS** |
-| | • Problem statements unlocked |
-| | • 24-Hour Countdown Timer Starts |
+| **09:00 AM – 09:30 AM** | **Inauguration & Orientation** |
+| **09:30 AM – 11:30 AM** | **Hands-on Session: Data Engineering Pipelines** (Mr. Venkatesh Subramony) |
+| **11:30 AM – 11:45 AM** | Tea Break |
+| **11:45 AM – 01:00 PM** | **Industry Session: Salesforce AI Solutions** (Mr. Paul Swarnapandi) |
+| **01:00 PM – 01:45 PM** | Lunch Break |
+| **01:45 PM – 03:00 PM** | **Session: AI-Powered Web Dev & Deployment** (Mr. Manesh) |
+| **03:00 PM – 03:15 PM** | Break |
+| **03:15 PM – 05:15 PM** | **Hack Smart Workshop** (Mr. Gamaliel Das - *Highlighted*) |
+| **05:15 PM – 05:45 PM** | **Hackathon Kick-off & Team Finalization** |
+
+### Day 1 – February 27, 2026: The Build Begins
+
+| Time | Activity |
+|------|----------|
+| **08:00 AM – 09:00 AM** | **Registration & Kit Distribution** |
+| **09:00 AM – 09:30 AM** | **Introduction & Briefing** (Mr. Gamaliel Das) |
+| **10:00 AM** | **🚀 HACKATHON BEGINS** (Problem Statements Released) |
 | **10:00 AM – 01:00 PM** | **Coding Phase 1: Ideation & Setup** |
-| | • Teams finalize ideas, select tech stacks, and set up development environments |
-| | • Initial architectural design |
 | **01:00 PM – 02:00 PM** | **🍽️ Lunch Break** |
-| | • Provided for all registered participants at the dining area |
 | **02:00 PM – 05:00 PM** | **Coding Phase 2: Core Development** |
-| | • Intensive development session |
-| | • Mentors circulate to assist teams with technical blockers |
-
 | **05:30 PM – 08:00 PM** | **Mentoring Round 1 (Progress Check)** |
-| | • First official checkpoint |
-| | • Teams demonstrate basic logic flow or working modules to mentors |
-| **08:00 PM – 09:00 PM** | **🍽️ Dinner Break** (Self-arranged) |
+| **08:00 PM – 09:00 PM** | **�️ Dinner Break** (Self-arranged) |
+| **09:00 PM – Overnight** | **🌙 The Overnight Sprint** (Continuous Coding) |
 
-### Overnight – February 27-28, 2026
-
-| Time | Activity |
-|------|----------|
-| **09:00 PM – 08:00 AM** | **Phase 3: The Overnight Sprint** |
-| | • Continuous overnight coding block |
-| | • Teams work on integrating frontend/backend and finalizing prototypes |
-
-### Day 2 – February 28, 2026
+### Day 2 – February 28, 2026: Grand Finale
 
 | Time | Activity |
 |------|----------|
-| **08:00 AM – 09:00 AM** | **🍳 Breakfast** (Self-arranged) |
-| | • Participants to arrange their own breakfast |
-| **09:00 AM – 10:00 AM** | **Final Polish & Code Freeze** |
-| | • Bug fixing, UI cleanup, and final testing |
-| | • **⚠️ 10:00 AM Hard Stop:** No code commits allowed |
-| | • Repository links and slides must be submitted |
-| **10:00 AM – 01:00 PM** | **Final Judging Round** |
-| | • Teams pitch solutions to the panel of judges (5-7 mins per team) |
-| | • Live demonstration of the working prototype |
-
+| **09:00 AM – 10:00 AM** | **Final Polish & Code Freeze** (Hard Stop at 10 AM) |
+| **10:00 AM – 01:00 PM** | **Final Judging Round** (Live Demos & Pitches) |
+| **01:00 PM – 02:00 PM** | **🍽️ Lunch Break** |
 | **02:00 PM – 03:30 PM** | **🏆 Valedictory Ceremony & Awards** |
-| | • Announcement of winners |
-| | • Closing address and Vote of Thanks |
-| **03:30 PM – 04:30 PM** | **Closing** |
-| | • Teams checkout and departure |
+| **03:30 PM – 04:30 PM** | **Closing & Departure** |
 
 ---
 
@@ -109,14 +89,12 @@ AURELION 2026 is the flagship national-level 24-hour hackathon bringing together
 
 - 🏆 24-hour hackathon experience
 - 👕 Official AURELION 2026 t-shirt & participation kit
-- 🍽️ Lunch
+- 🍽️ Meals: Lunch
+- 🎓 Free Hands-on Workshop (Feb 26)
+- 🚀 Featherless Inference Access (20,000+ Models)
 - 👨‍🏫 Mentorship from industry experts
 - 📜 Certificate of participation
-- 💰 Prize pool worth ₹50,000+
-- 🛫 Internship opportunities (2 international)
-- 🎧 ElevenLabs Creator Tier ~₹5,500 per person
-- 🥇 For the overall winning team: ElevenLabs Pro Tier ~₹25,000 per person
-- 🏅 For the “Best Project Built with ElevenLabs”: ~₹1,65,000 per person
+- 💰 Prize pool worth ₹2,50,000+ (Cash + Credits + Benefits)
 
 ---
 

@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // SCROLL ANIMATIONS
 // ==========================================
 function initScrollAnimations() {
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .slide-in-up');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -408,3 +408,144 @@ if (tvCloseBtn && tvModal) {
         }
     });
 }
+
+// ==========================================
+// ANIMATED COUNTERS
+// ==========================================
+document.addEventListener('DOMContentLoaded', function () {
+    const statValues = document.querySelectorAll('.stat-value');
+
+    const animateCounter = (element) => {
+        const target = parseInt(element.dataset.target);
+        const prefix = element.dataset.prefix || '';
+        const suffix = element.dataset.suffix || '';
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+
+        const updateCounter = () => {
+            current += step;
+            if (current < target) {
+                element.textContent = prefix + Math.floor(current).toLocaleString() + suffix;
+                requestAnimationFrame(updateCounter);
+            } else {
+                element.textContent = prefix + target.toLocaleString() + suffix;
+            }
+        };
+
+        updateCounter();
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                entry.target.classList.add('counted');
+                animateCounter(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statValues.forEach(el => observer.observe(el));
+});
+
+// ==========================================
+// SECTION-SPECIFIC FLOATING PARTICLES
+// ==========================================
+document.addEventListener('DOMContentLoaded', function () {
+    const sectionCanvases = document.querySelectorAll('.section-particles');
+
+    sectionCanvases.forEach(canvas => {
+        const section = canvas.parentElement;
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const particleCount = 30;
+
+        function resize() {
+            canvas.width = section.offsetWidth;
+            canvas.height = section.offsetHeight;
+        }
+
+        function createParticle() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2 + 0.5,
+                speedX: (Math.random() - 0.5) * 0.3,
+                speedY: (Math.random() - 0.5) * 0.3,
+                opacity: Math.random() * 0.5 + 0.2,
+                twinkle: Math.random() * 0.02
+            };
+        }
+
+        function init() {
+            resize();
+            particles = [];
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(createParticle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach(p => {
+                p.x += p.speedX;
+                p.y += p.speedY;
+
+                // Twinkle effect
+                p.opacity += p.twinkle;
+                if (p.opacity > 0.7 || p.opacity < 0.2) {
+                    p.twinkle = -p.twinkle;
+                }
+
+                // Wrap around edges
+                if (p.x < 0) p.x = canvas.width;
+                if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height;
+                if (p.y > canvas.height) p.y = 0;
+
+                // Draw star shape
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 200, 100, ${p.opacity})`;
+                ctx.shadowBlur = 8;
+                ctx.shadowColor = 'rgba(255, 180, 80, 0.5)';
+                ctx.fill();
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', resize);
+        init();
+        animate();
+    });
+});
+
+// ==========================================
+// 3D TILT EFFECT FOR CARDS
+// ==========================================
+document.addEventListener('DOMContentLoaded', function () {
+    const tiltCards = document.querySelectorAll('[data-tilt]');
+
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = (y - centerY) / 15;
+            const rotateY = (centerX - x) / 15;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        });
+    });
+});
+

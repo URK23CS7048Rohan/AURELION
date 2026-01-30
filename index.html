@@ -21,6 +21,10 @@
 </head>
 
 <body>
+    <!-- Global Visual Effects -->
+    <div class="noise-overlay"></div>
+    <div class="gradient-mesh"></div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
@@ -250,18 +254,34 @@
                 </div>
             </div>
 
-            <!-- Title Sponsor Section -->
+            <!-- Sponsors Section -->
             <div style="margin-top: 5rem; text-align: center;">
-                <h2 class="section-title" style="font-size: 2.5rem;">Title <span class="gradient-text">Sponsor</span>
-                </h2>
-                <p class="section-description" style="margin-bottom: 2rem;">Powered by the world's leading AI voice
-                    technology</p>
+                <h2 class="section-title">Our <span class="gradient-text">Partners</span></h2>
 
-                <div style="display: flex; justify-content: center;">
+                <div class="sponsors-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <!-- Title Sponsor -->
                     <div class="glass-card fade-in"
-                        style="padding: 3rem 5rem; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 1.5rem;">
+                        style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <span
+                            style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-orange); margin-bottom: 1rem;">Title
+                            Sponsor</span>
                         <img src="elevenlabs-logo.png" alt="ElevenLabs"
-                            style="max-width: 350px; width: 100%; filter: invert(1); display: block;">
+                            style="max-width: 280px; width: 100%; height: auto; filter: invert(1);">
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-muted);">Powered by
+                            leading AI voice technology</p>
+                    </div>
+
+                    <!-- Inference Partner -->
+                    <div class="glass-card fade-in"
+                        style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <span
+                            style="font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-orange); margin-bottom: 1rem;">Inference
+                            Partner</span>
+                        <img src="assets/logos/featherless.png" alt="Featherless.ai"
+                            style="max-width: 280px; width: 100%; height: auto; mix-blend-mode: screen;">
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-muted);">Access 20,000+
+                            Models for limitless innovation</p>
                     </div>
                 </div>
             </div>
@@ -269,7 +289,8 @@
     </section>
 
     <!-- Mentors & Judges Section -->
-    <section id="mentors" class="mentors-section">
+    <section id="mentors" class="mentors-section has-particles">
+        <canvas class="section-particles"></canvas>
         <div class="container">
             <h2 class="section-title">Learn From <span class="gradient-text">Global Industrial Leaders</span></h2>
             <p class="section-description">Our distinguished mentors and judges bring world-class expertise to guide
@@ -327,11 +348,13 @@
         </div>
     </section>
 
+
+
     <!-- Prizes Section -->
-    <section id="prizes" class="prizes">
+    <section id="prizes" class="prizes prizes-section">
         <div class="container">
-            <h2 class="section-title">🏆 <span class="gradient-text">Prizes</span></h2>
-            <p class="section-description">Cash prizes + exclusive rewards sponsored by ElevenLabs</p>
+            <h2 class="section-title fade-in">🏆 <span class="gradient-text">Prizes</span></h2>
+            <p class="section-description fade-in">Cash prizes + exclusive rewards sponsored by ElevenLabs</p>
 
             <div class="prizes-grid">
                 <!-- Main Prize Pool -->
@@ -347,7 +370,7 @@
                 <!-- Prize for All Participants -->
                 <div class="prize-card glass-card fade-in">
                     <h3>All Participants</h3>
-                    <div class="prize-value">₹5,478</div>
+                    <div class="prize-value">~₹5,700</div>
                     <p class="prize-tier">ElevenLabs Creator Tier</p>
                     <p class="prize-description">3 months FREE access</p>
                     <span class="prize-badge">400 Winners</span>
@@ -356,7 +379,7 @@
                 <!-- Prize for Overall Winners -->
                 <div class="prize-card glass-card fade-in prize-highlight">
                     <h3>Overall Winners</h3>
-                    <div class="prize-value">₹98,604</div>
+                    <div class="prize-value">~₹26,000/member</div>
                     <p class="prize-tier">ElevenLabs Pro Tier</p>
                     <p class="prize-description">3 months FREE access</p>
                     <span class="prize-badge prize-badge-gold">Grand Prize</span>
@@ -365,15 +388,94 @@
                 <!-- Prize for Best ElevenLabs Project -->
                 <div class="prize-card glass-card fade-in prize-special">
                     <h3>Best ElevenLabs Project</h3>
-                    <div class="prize-value">₹6,57,360</div>
+                    <div class="prize-value">~₹1.7 Lakh/member</div>
                     <p class="prize-tier">ElevenLabs Scale Tier</p>
-                    <p class="prize-description">6 months FREE access</p>
+                    <p class="prize-description">6 months FREE access + Internship Chance</p>
                     <span class="prize-badge prize-badge-special">Special Award</span>
+                </div>
+
+                <!-- Featherless Prize -->
+                <div class="prize-card glass-card fade-in">
+                    <h3>Featherless AI Challenge</h3>
+                    <div class="prize-value">₹45,000+ Total</div>
+                    <p class="prize-tier">Scale Plan Credits</p>
+                    <p class="prize-description">1st: ₹26,100 · 2nd: ₹13,050 · 3rd: ₹6,500</p>
+                    <span class="prize-badge">Internship Opportunity</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- AI Innovation Workshop Section -->
+    <section id="workshop" class="workshop-section has-particles">
+        <canvas class="section-particles"></canvas>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span class="badge-free">Free Workshop For All Participants</span>
+                <h2 class="section-title" style="margin-top: 2rem;">AI Innovation <span
+                        class="gradient-text">Workshop</span></h2>
+                <p class="section-description">February 26, 2026 | A full day of hands-on learning with industry experts
+                </p>
+            </div>
+
+            <div class="workshop-grid">
+                <!-- Card 1 -->
+                <div class="workshop-card fade-in">
+                    <div class="workshop-header">
+                        <span class="workshop-time">09:30 AM</span>
+                        <img src="MR. VENKATESH SUBRAMONY.jpeg" alt="Mr. Venkatesh Subramony" class="speaker-avatar">
+                    </div>
+                    <h3>Building Scalable AI Data Engineering Pipelines</h3>
+                    <div class="speaker-info">
+                        <p class="speaker-name">Mr. Venkatesh Subramony</p>
+                        <p class="speaker-title">Senior Principal Data Engineer, The Chronicle of Higher Education, USA
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="workshop-card fade-in">
+                    <div class="workshop-header">
+                        <span class="workshop-time">11:45 AM</span>
+                        <img src="MR PAUL SWARNAPANDI.jpeg" alt="Mr. Paul Swarnapandi" class="speaker-avatar">
+                    </div>
+                    <h3>Building AI-Enabled Enterprise Solutions using Salesforce</h3>
+                    <div class="speaker-info">
+                        <p class="speaker-name">Mr. Paul Swarnapandi</p>
+                        <p class="speaker-title">Director, SCloud Consulting Pty Ltd, Australia</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="workshop-card fade-in">
+                    <div class="workshop-header">
+                        <span class="workshop-time">01:45 PM</span>
+                        <img src="MR. MANESH.jpeg" alt="Mr. Manesh" class="speaker-avatar">
+                    </div>
+                    <h3>AI-Powered Web Development & Deployment</h3>
+                    <div class="speaker-info">
+                        <p class="speaker-name">Mr. Manesh</p>
+                        <p class="speaker-title">Technical Director, Metatroncube</p>
+                    </div>
+                </div>
+
+                <!-- Highlight Card -->
+                <div class="workshop-card highlight-card fade-in">
+                    <div class="workshop-header">
+                        <span class="workshop-time">03:15 PM</span>
+                        <img src="MR. GAMALIEL DAS.jpeg" alt="Mr. Gamaliel Das" class="speaker-avatar">
+                    </div>
+                    <h3>Hack Smart: Building & Fine-Tuning Open-Source AI Models</h3>
+                    <div class="speaker-info">
+                        <p class="speaker-name" style="color: var(--color-orange);">Mr. Gamaliel Das</p>
+                        <p class="speaker-title" style="color: white; font-weight: 600;">India's #1 Hackathon Mentor</p>
+                        <p class="speaker-title" style="opacity: 0.8; font-size: 0.85rem; margin-top: 0.25rem;">Founder
+                            & CEO, Codehunters Academy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Tracks Section -->
     <section id="tracks" class="tracks">
@@ -522,6 +624,30 @@
                         <li>
                             <svg class="list-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                                <line x1="20" y1="9" x2="23" y2="9"></line>
+                                <line x1="20" y1="14" x2="23" y2="14"></line>
+                                <line x1="1" y1="9" x2="4" y2="9"></line>
+                                <line x1="1" y1="14" x2="4" y2="14"></line>
+                            </svg>
+                            <span>Featherless Inference Access (20,000+ Models)</span>
+                        </li>
+                        <li>
+                            <svg class="list-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                            <span>Free Hands-on Workshop (Feb 26)</span>
+                        </li>
+                        <li>
+                            <svg class="list-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                             </svg>
                             <span>Meals: Lunch</span>
@@ -559,6 +685,16 @@
             </p>
 
             <div class="timeline">
+                <!-- Day 0 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-time">Feb 26 - Hands-on Workshop</div>
+                        <h3>AI Innovation Workshop Day</h3>
+                        <p>Full day of hands-on sessions by industry experts. See detailed agenda above. Free for
+                            Aurelion participants.</p>
+                    </div>
+                </div>
                 <!-- Day 1 -->
                 <div class="timeline-item fade-in">
                     <div class="timeline-dot"></div>
